@@ -12,11 +12,16 @@ import java.util.ArrayList;
  *
  * @author jfherrer
  */
-public abstract class Postre {
-    
+public  class Postre {
+    private String postre;
     private String sabor;
     private double precioParcial;
     private ArrayList<Aderezo> aderezos;
+     public Postre(String sabor,String postre){
+        aderezos= new ArrayList<>();
+        this.sabor=sabor;
+        this.postre=postre;
+    }
         
     public double calcularPrecioFinal(){
         double precioFinal;
@@ -30,7 +35,7 @@ public abstract class Postre {
 
     @Override
     public String toString() {
-        return "Helado{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
+        return "Postre:  "+postre+'{' + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}' ;
     }
     
 }
