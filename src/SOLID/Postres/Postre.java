@@ -12,12 +12,25 @@ import java.util.ArrayList;
  *
  * @author jfherrer
  */
-public class CalcularPrecioFinal {
+public abstract class Postre {
     
-    public double calcularPrecioFinal(double precioParcial, ArrayList<Aderezo> aderezos){
+    private String sabor;
+    private double precioParcial;
+    private ArrayList<Aderezo> aderezos;
+        
+    public double calcularPrecioFinal(){
         double precioFinal;
         precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
         return precioFinal;
+    }
+
+    public ArrayList<Aderezo> getAderezos() {
+        return aderezos;
+    }
+
+    @Override
+    public String toString() {
+        return "Helado{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
     }
     
 }
