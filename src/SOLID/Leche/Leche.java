@@ -9,8 +9,8 @@ package SOLID.Leche;
  *
  * @author jfherrer
  */
-public interface Leche {
+public class Leche {
     
-    public void usar(); //UsandoLeche
+    public void usar(){} //UsandoLeche
     
 }

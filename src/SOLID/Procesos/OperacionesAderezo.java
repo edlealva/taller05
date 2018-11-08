@@ -5,7 +5,8 @@
  */
 package SOLID.Procesos;
 
-import Otros.Aderezo;
+
+import SOLID.Otros.Aderezo;
 import SOLID.Postres.Postre;
 
 /**
@@ -20,6 +21,7 @@ public class OperacionesAderezo {
     
     public static void quitarAderezoPostre(Postre postre, Aderezo aderezo){
         postre.getAderezos().remove(aderezo);
+    
     }
     
 }

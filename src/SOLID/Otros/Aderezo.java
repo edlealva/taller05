@@ -10,6 +10,7 @@ package SOLID.Otros;
  * @author erbarrei
  */
 public class Aderezo {
+
     
     private String aderezo;
     
