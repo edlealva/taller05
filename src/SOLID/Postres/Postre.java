@@ -17,15 +17,16 @@ public  class Postre {
     private String sabor;
     private double precioParcial;
     private ArrayList<Aderezo> aderezos;
-     public Postre(String sabor,String postre){
-        aderezos= new ArrayList<>();
-        this.sabor=sabor;
-        this.postre=postre;
+    
+    public Postre(String sabor, String postre){
+        aderezos = new ArrayList<>();
+        this.sabor = sabor;
+        this.postre = postre;
     }
         
     public double calcularPrecioFinal(){
         double precioFinal;
-        precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
+        precioFinal = (precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
         return precioFinal;
     }
 
@@ -35,7 +36,7 @@ public  class Postre {
 
     @Override
     public String toString() {
-        return "Postre:  "+postre+'{' + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}' ;
+        return "Postre: " + postre + "{" + "sabor= " + sabor + ", precioParcial= " + precioParcial + ", aderezos= " + aderezos + "}" ;
     }
     
 }

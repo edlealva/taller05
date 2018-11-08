@@ -9,7 +9,20 @@ package SOLID.Aderezos;
  *
  * @author erbarrei
  */
-public abstract class Aderezo 
-{
+public class Aderezo {
+    
+    private String aderezo;
+    
+    public Aderezo(String aderezo) {
+        this.aderezo = aderezo;
+    }
+
+    public void setAderezo(String aderezo) {
+        this.aderezo = aderezo;
+    }
+    
+    public String getAderezo() {
+        return aderezo;
+    }
     
 }
