@@ -18,7 +18,7 @@ public  class Postre {
     private double precioParcial;
     private ArrayList<Aderezo> aderezos;
     
-    public Postre(String sabor, String postre){
+    public Postre(String postre, String sabor){
         aderezos = new ArrayList<>();
         this.sabor = sabor;
         this.postre = postre;
